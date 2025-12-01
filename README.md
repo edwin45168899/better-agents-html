@@ -1,5 +1,8 @@
 # better-agents-html
-better-agents 的網頁說明
+Better Agents 是一個 CLI 工具，也是一套用於建構 AI 代理（Agent）的標準。
+
+它能為您的程式碼助手（如 Kilocode, Claude Code, Cursor 等）增強能力，使其成為您選擇的任何代理框架（如 Agno, Mastra 等）及其最佳實踐的專家。
+
 
 ## 前置需求
 - Node.js 22
