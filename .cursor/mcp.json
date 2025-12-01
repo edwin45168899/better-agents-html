@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "langwatch": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@langwatch/mcp-server"
+      ]
+    }
+  }
+}

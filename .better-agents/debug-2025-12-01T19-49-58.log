@@ -1,0 +1,12 @@
+{"level":"debug","timestamp":"2025-12-01T19:49:58.757Z","time":1764618598758,"pid":5267,"hostname":"chiisen3070","step":"timer-end","label":"directory-creation","duration":3}
+{"level":"debug","timestamp":"2025-12-01T19:49:58.757Z","time":1764618598758,"pid":5267,"hostname":"chiisen3070","step":"timer-start","label":"project-structure"}
+{"level":"debug","timestamp":"2025-12-01T19:49:58.757Z","time":1764618598895,"pid":5267,"hostname":"chiisen3070","step":"timer-end","label":"project-structure","duration":137}
+{"level":"debug","timestamp":"2025-12-01T19:49:58.757Z","time":1764618598895,"pid":5267,"hostname":"chiisen3070","step":"timer-start","label":"framework-setup"}
+{"level":"debug","timestamp":"2025-12-01T19:49:58.757Z","time":1764618599701,"pid":5267,"hostname":"chiisen3070","step":"timer-end","label":"framework-setup","duration":806}
+{"level":"debug","timestamp":"2025-12-01T19:49:58.757Z","time":1764618599701,"pid":5267,"hostname":"chiisen3070","step":"timer-start","label":"mcp-config"}
+{"level":"debug","timestamp":"2025-12-01T19:49:58.757Z","time":1764618599724,"pid":5267,"hostname":"chiisen3070","step":"timer-end","label":"mcp-config","duration":23}
+{"level":"debug","timestamp":"2025-12-01T19:49:58.757Z","time":1764618599724,"pid":5267,"hostname":"chiisen3070","step":"timer-start","label":"agents-guide"}
+{"level":"debug","timestamp":"2025-12-01T19:49:58.757Z","time":1764618599732,"pid":5267,"hostname":"chiisen3070","step":"timer-end","label":"agents-guide","duration":8}
+{"level":"debug","timestamp":"2025-12-01T19:49:58.757Z","time":1764618599733,"pid":5267,"hostname":"chiisen3070","step":"user-success","message":"Your agent project is ready!","type":"success"}
+{"level":"debug","timestamp":"2025-12-01T19:49:58.757Z","time":1764618599733,"pid":5267,"hostname":"chiisen3070","step":"user-info","message":"Project location: /mnt/d/github/chiisen/better-agents-html","type":"info"}
+{"level":"info","timestamp":"2025-12-01T19:49:58.757Z","time":1764618599733,"pid":5267,"hostname":"chiisen3070","step":"init-completed","projectPath":"/mnt/d/github/chiisen/better-agents-html","success":true}

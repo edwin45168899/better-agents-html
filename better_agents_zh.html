@@ -134,33 +134,12 @@
         <p>Better Agents 是一個 CLI 工具，也是一套用於建構 AI 代理（Agent）的標準。</p>
         <p>它能為您的程式碼助手（如 Kilocode, Claude Code, Cursor 等）增強能力，使其成為您選擇的任何代理框架（如 Agno, Mastra 等）及其最佳實踐的專家。</p>
         <p class="note">這是開始任何新代理專案的最佳方式。</p>
-
-        <h2>Better Agent 架構</h2>
-        <p>Better Agent 的結構和生成的 <code>AGENTS.md</code> 確保了業界的最佳實踐，讓您的代理準備好投入生產環境：</p>
-        <ul>
-            <li><strong><a href="https://github.com/langwatch/scenario">Scenario</a></strong>：為每個功能編寫代理測試，確保代理行為符合預期。
-            </li>
-            <li><strong>提示詞版本控制</strong>：方便團隊協作。</li>
-            <li><strong>評估筆記本 (Evaluation notebooks)</strong>：用於測量特定提示詞的效能。</li>
-            <li><strong>完整的可觀測性</strong>：已預先配置好儀器。</li>
-            <li><strong>標準化結構</strong>：提高專案的可維護性。</li>
-        </ul>
-
-        <h3>專案結構範例</h3>
-        <pre><code>my-agent-project/
-├── app/ (或 src/)      # 實際的代理程式碼，依據選擇的框架而定
-├── tests/
-│   ├── evaluations/    # 用於評估的 Jupyter notebooks
-│   │   └── example_eval.ipynb
-│   └── scenarios/      # 端對端情境測試
-│       └── example_scenario.test.{py,ts}
-├── prompts/            # 用於團隊協作的版本化提示詞檔案
-│   └── sample_prompt.yaml
-├── prompts.json        # 提示詞註冊表
-├── .mcp.json           # MCP 伺服器配置
-├── AGENTS.md           # 開發指南
-├── .env                # 環境變數
-└── .gitignore</code></pre>
+        │ └── sample_prompt.yaml
+        ├── prompts.json # 提示詞註冊表
+        ├── .mcp.json # MCP 伺服器配置
+        ├── AGENTS.md # 開發指南
+        ├── .env # 環境變數
+        └── .gitignore</code></pre>
 
         <p><code>AGENTS.md</code> 中的結構和指南確保程式碼助手所需的每個新功能都經過適當的測試、評估，並且提示詞受到版本控制。</p>
         <p><code>.mcp.json</code> 附帶了所有正確的 MCP 設置，因此您的程式碼助手將成為您選擇的框架的專家，並知道在哪裡可以找到新工具。</p>
@@ -189,36 +168,19 @@ better-agents init my-awesome-agent</code></pre>
             <li><a href="https://github.com/langwatch/better-agents/blob/main/docs/STRUCTURE.md">專案結構</a> - 了解 Better
                 Agent 的結構</li>
             <li><a href="https://github.com/langwatch/better-agents/blob/main/docs/FEATURES.md">功能</a> - 主要功能和能力</li>
-            <li><a href="https://github.com/langwatch/better-agents/blob/main/docs/USAGE.md">使用方法</a> - CLI 用法和範例</li>
-            <li><a href="https://github.com/langwatch/better-agents/blob/main/docs/PHILOSOPHY.md">設計哲學</a> - 代理測試金字塔方法
-            </li>
+            (claude CLI)</li>
+            <li><a href="https://www.cursor.com/">Cursor</a></li>
+            <li><a href="https://www.kilocode.ai/">Kilocode CLI</a> (kilocode)</li>
         </ul>
-
-        <h2>需求 (Requirements)</h2>
-        <div class="note" style="border-left-color: #ef4444; background-color: #fef2f2;">
-            <strong>注意 (Windows 使用者)：</strong>
-            <p>由於此工具依賴 <code>posix</code> 套件，目前無法直接在 Windows 環境下安裝（會出現 <code>unistd.h</code> 缺失錯誤）。<br>
-                建議 Windows 使用者透過 <strong>WSL (Windows Subsystem for Linux)</strong> 來安裝與使用。</p>
-        </div>
-        <ul>
-            <li>Node.js 22+</li>
-            <li>npm 或 pnpm</li>
-            <li>程式碼助手（以下擇一）：
-                <ul>
-                    <li><a href="https://docs.anthropic.com/en/docs/agents-and-tools/claude-code-agent">Claude Code</a>
-                        (claude CLI)</li>
-                    <li><a href="https://www.cursor.com/">Cursor</a></li>
-                    <li><a href="https://www.kilocode.ai/">Kilocode CLI</a> (kilocode)</li>
-                </ul>
-            </li>
-            <li>API 金鑰：
-                <ul>
-                    <li>您選擇的 LLM 提供商 API 金鑰</li>
-                    <li>LangWatch API 金鑰 (在 <a href="https://app.langwatch.ai/authorize">這裡</a> 獲取)</li>
-                    <li>Smithery API 金鑰 (選填 - 用於 MCP 工具自動發現，在 <a href="https://smithery.ai/account/api-keys">這裡</a> 獲取)
-                    </li>
-                </ul>
-            </li>
+        </li>
+        <li>API 金鑰：
+            <ul>
+                <li>您選擇的 LLM 提供商 API 金鑰</li>
+                <li>LangWatch API 金鑰 (在 <a href="https://app.langwatch.ai/authorize">這裡</a> 獲取)</li>
+                <li>Smithery API 金鑰 (選填 - 用於 MCP 工具自動發現，在 <a href="https://smithery.ai/account/api-keys">這裡</a> 獲取)
+                </li>
+            </ul>
+        </li>
         </ul>
 
         <h2>資源 (Resources)</h2>
